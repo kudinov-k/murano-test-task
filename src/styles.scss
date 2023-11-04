@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input {
+  height: 32px;
+  border: 1px solid #d3dce0;
+  border-radius: 4px;
+  padding: 0 12px;
+  outline: none;
+
+  &:disabled {
+    background-color: #f9f9f9;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+
+    &::placeholder {
+      color: #ababab;
+    }
+  }
+
+  &:hover {
+    background-color: #f8f8f8;
+  }
+
+  &:focus {
+    border-color: #00a2dd;
+    background-color: #ffffff;
+  }
+
+  &.ng-invalid {
+    border-color: #d31818;
+  }
+}

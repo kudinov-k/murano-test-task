@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+.title {
+  margin-bottom: 8px;
+
+  &.disabled {
+    color: #ababab;
+  }
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 8px;
+
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+  }
+}
+
+.error {
+  color: #d31818;
+  font-size: 12px;
+}
