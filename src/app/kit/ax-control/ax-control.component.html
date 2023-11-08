@@ -1,20 +1,10 @@
-<div (focus)="onFocus()">
+<div>
   <div [class.disabled]="inputControl?.disabled" class="title">{{title}}</div>
   <div class="input-container">
-    <ng-content select="input"></ng-content>
+    <ng-content></ng-content>
 
     <div *ngIf="errors.length" class="icon">
       <img alt="" height="16" ngSrc="assets/icons/exclamation-triangle-solid.svg" width="16"/>
     </div>
-  </div>
-
-  <div *ngIf="errors.length" class="error">
-    <ng-container *ngFor="let err of errors">
-      <div *ngIf="validationsObject.has(err)">
-        <ng-template
-          [ngTemplateOutlet]="validationsObject.get(err) || null"
-        ></ng-template>
-      </div>
-    </ng-container>
   </div>
 </div>

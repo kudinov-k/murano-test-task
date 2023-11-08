@@ -1,5 +1,5 @@
 :host {
-  display: block;
+  display: flex;
 }
 
 .title {
@@ -13,6 +13,8 @@
 .input-container {
   position: relative;
   margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
 
   .icon {
     position: absolute;
